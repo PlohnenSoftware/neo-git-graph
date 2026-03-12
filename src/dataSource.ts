@@ -1,7 +1,8 @@
 import * as cp from "node:child_process";
 
+import { getBranches as _getBranches } from "./backend/features/branch";
+import { escapeRefName, getPathFromStr } from "./backend/utils";
 import { getConfig } from "./config";
-import { getBranches as _getBranches } from "./features/branch";
 import {
   GitCommandStatus,
   GitCommit,
@@ -12,7 +13,6 @@ import {
   GitResetMode,
   GitUnsavedChanges
 } from "./types";
-import { getPathFromStr } from "./utils";
 
 const eolRegex = /\r\n|\r|\n/g;
 const gitLogSeparator = "XX7Nal-YARtTpjCikii9nJxER19D6diSyk-AWkPb";
@@ -467,8 +467,4 @@ export class DataSource {
       });
     });
   }
-}
-
-function escapeRefName(str: string) {
-  return str.replace(/'/g, "'");
 }

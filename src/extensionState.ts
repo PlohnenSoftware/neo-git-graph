@@ -2,8 +2,8 @@ import * as fs from "node:fs";
 
 import { ExtensionContext, Memento } from "vscode";
 
+import { getPathFromStr } from "./backend/utils";
 import { Avatar, AvatarCache, GitRepoSet } from "./types";
-import { getPathFromStr } from "./utils";
 
 const AVATAR_STORAGE_FOLDER = "/avatars";
 const AVATAR_CACHE = "avatarCache";
