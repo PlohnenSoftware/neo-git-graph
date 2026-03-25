@@ -465,7 +465,6 @@ class GitGraphView {
       ? '<div id="loadMoreCommitsBtn" class="roundedBtn">Load More Commits</div>'
       : "";
     this.makeTableResizable();
-    this.makeTableResizable();
 
     if (this.moreCommitsAvailable) {
       document.getElementById("loadMoreCommitsBtn")!.addEventListener("click", () => {

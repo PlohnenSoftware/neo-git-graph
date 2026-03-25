@@ -578,9 +578,15 @@ svg.fileIcon {
 }
 
 @keyframes headPulse {
-  0% { background-color: oklch(87.44% 0.2383 150 / 0.1); }
-  50% { background-color: oklch(87.44% 0.2383 150 / 0.5); }
-  100% { background-color: transparent; }
+  0% {
+    background-color: oklch(87.44% 0.2383 150 / 0.1);
+  }
+  50% {
+    background-color: oklch(87.44% 0.2383 150 / 0.5);
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 #actionRunning svg {
   display: inline-block;
